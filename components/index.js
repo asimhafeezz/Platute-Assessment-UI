@@ -1,0 +1,5 @@
+export * from "./ImageWithParagraphs"
+export * from "./TextWithIcon"
+export * from "./Comments"
+export * from "./WriteComment"
+export * from "./SimilarNews"

@@ -1,26 +1,78 @@
+@font-face {
+	font-family: "Proxima";
+	src: url("../assets/Fonts/Proxima\ Nova\ Regular.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Proxima";
+	src: url("../assets/Fonts/Mark\ Simonson\ -\ Proxima\ Nova\ Bold.otf");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Proxima";
+	src: url("../assets/Fonts/Mark\ Simonson\ -\ Proxima\ Nova\ Semibold.otf");
+	font-weight: normal;
+	font-style: italic;
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	padding: 0;
+	margin: 0;
+	font-family: Promixa, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+		Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+}
+
+ul li::before {
+	content: "\2022";
+	color: red;
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+
+button {
+	background-color: #e65d5d !important;
+	border: none;
+	color: white !important;
+	padding: 10px 38px !important;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	font-weight: bold !important;
+	outline: none !important;
+	border: 1px solid #e65d5d !important;
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+	html {
+		color-scheme: dark;
+	}
+	body {
+		color: white;
+		background: black;
+	}
 }
